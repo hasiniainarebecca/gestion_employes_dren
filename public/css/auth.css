@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(images/NoirBlanc.jpg);
+    display: flex;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+    min-height: 100vh;
+    font-family: 'Montserrat',sans-serif;
+    color: #fff;
+}
+.formBox{
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 0 24px 48px;
+    box-shadow: 0 1px 20px 5px rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+}
+.formBox h1{
+    line-height: 48px;
+    margin: 24px 0;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.formBox .inputBox{
+    position: relative;
+}
+.formBox .inputBox input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+}
+.formBox .inputBox label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.formBox .inputBox input:focus ~ label,
+.formBox .inputBox input:valid ~ label{
+    top: -18px;
+    left: 0;
+    font-size: 14px;
+    color: #00fc93;
+}
+.formBox input[type="submit"]{
+    background: #00fc93;
+    border: none;
+    outline: none;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.formBox input[type="submit"]:hover{
+    background: #025843;
+}
